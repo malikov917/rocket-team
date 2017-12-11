@@ -1,0 +1,104 @@
+/* line 1, ../sass/main.scss */
+body {
+  display: flex;
+  justify-content: center;
+  min-width: 1024px;
+  font-family: Roboto;
+  color: #24292e;
+}
+
+/* line 8, ../sass/main.scss */
+* {
+  outline: none;
+}
+
+/* line 12, ../sass/main.scss */
+.main {
+  width: 1024px;
+}
+
+/* line 16, ../sass/main.scss */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 21, ../sass/main.scss */
+nav h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+/* line 26, ../sass/main.scss */
+nav .btns {
+  display: flex;
+}
+/* line 28, ../sass/main.scss */
+nav .btns .btn {
+  border: 1px solid #bbbbbb;
+  background: #f3f4f4;
+  padding: 5px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: all ease .3s;
+}
+/* line 36, ../sass/main.scss */
+nav .btns .btn:hover {
+  background: #e1e4e4;
+}
+
+/* line 44, ../sass/main.scss */
+.content ul {
+  font-size: 18px;
+}
+/* line 47, ../sass/main.scss */
+.content span {
+  background: #f3f4f4;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* line 54, ../sass/main.scss */
+.visible li {
+  opacity: 1;
+  max-height: 100px;
+  transition: all ease .4s;
+}
+
+/* line 62, ../sass/main.scss */
+.invisible li {
+  opacity: 0;
+  max-height: 0;
+  transition: all ease .4s;
+}
+
+.invisible input {
+  opacity: 0;
+  max-height: 0;
+  transition: all ease .4s;
+}
+
+.invisible button {
+  opacity: 0;
+  max-height: 0;
+  transition: all ease .4s;
+}
+
+/* line 70, ../sass/main.scss */
+input,
+button {
+  opacity: .3;
+}
+
+button {
+     display: block;   
+     
+    margin: 3px 0;
+}
+
+input + button {
+    opacity: .3;
+    display: inline-block;
+}
